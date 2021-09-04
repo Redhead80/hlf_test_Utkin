@@ -1,0 +1,1 @@
+Error: endorsement failure during query. response: status:500 message:"make sure the chaincode hello has been successfully defined on channel primary and try again: chaincode definition for 'hello' exists, but chaincode is not installed" 

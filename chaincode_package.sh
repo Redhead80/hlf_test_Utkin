@@ -18,7 +18,7 @@ echo "Vendoring chaincode ${CC_NAME}"
 
 pushd "$CC_SRC_PATH" || exit 1
 rm -rf vendor go.mod go.sum
-go mod init
+go mod init hello/m/v2
 GO111MODULE=on go mod vendor
 popd || exit 1
 

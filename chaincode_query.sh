@@ -38,7 +38,7 @@ export CORE_PEER_ADDRESS=localhost:9051
 export CORE_PEER_MSPCONFIGPATH=${PEER0_ORG2_MSP}
 export CORE_PEER_TLS_ROOTCERT_FILE=${PEER0_ORG2_CA}
 
-peer chaincode query -C "$CHANNEL_NAME" -n "${CC_NAME}" -c '{"Args": ["read", "init"]}' >&log.txt
+peer chaincode query -C "$CHANNEL_NAME" -n "${CC_NAME}" -c '{"Args": ["read", "value1"]}' >&log.txt
 
 #docker exec \
 #    -e "CORE_PEER_LOCALMSPID=Org2MSP" \

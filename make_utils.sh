@@ -48,7 +48,7 @@ fi
 echo "Changing to Fabric CA source directory"
 cd ${GOPATH}/src/github.com/hyperledger/fabric-ca || exit 1
 git checkout "${FABRIC_CA_VERSION_TAG}"
-GO111MODULE=off make fabric-ca-client
+GO111MODULE=off make #fabric-ca-client
 cp bin/fabric-ca-client ${WORKING_DIR}/bin
 
 echo "Returning to the working directory"
